@@ -1,8 +1,8 @@
 ﻿#include "TetrisLoop.h"
 #include "colors.h"
 #include <iostream>
-#include <cstdlib>   // rand, srand 함수가 있는 library 블럭이 랜덤으로 나오도록
-#include <ctime>     // time 함수
+#include <cstdlib>   // rand, srand
+#include <ctime>     // time
 
 // 생성자
 TetrisLoop::TetrisLoop() : lastUpdateTime(0)

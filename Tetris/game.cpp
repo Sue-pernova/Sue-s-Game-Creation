@@ -1,18 +1,10 @@
-<<<<<<< HEAD
 #include "game.h"
-#include <random>
-
-using namespace std;
-
-=======
-﻿#include "game.h"
 #include <random>
 #include <iostream>
 
 using namespace std;
 
-// 생성자
->>>>>>> 4c45677 (make Loop file)
+
 Game::Game()
 {
     grid = Grid();
@@ -21,25 +13,17 @@ Game::Game()
     nextBlock = GetRandomBlock();
     gameOver = false;
     score = 0;
-<<<<<<< HEAD
-    InitAudioDevice();
-    music = LoadMusicStream("Sounds/music.mp3");
-    PlayMusicStream(music);
-=======
 
     InitAudioDevice();
     music = LoadMusicStream("Sounds/music.mp3");
     PlayMusicStream(music);
 
->>>>>>> 4c45677 (make Loop file)
+
     rotateSound = LoadSound("Sounds/rotate.mp3");
     clearSound = LoadSound("Sounds/clear.mp3");
 }
 
-<<<<<<< HEAD
-=======
-// 소멸자
->>>>>>> 4c45677 (make Loop file)
+
 Game::~Game()
 {
     UnloadSound(rotateSound);
@@ -48,10 +32,7 @@ Game::~Game()
     CloseAudioDevice();
 }
 
-<<<<<<< HEAD
-=======
-// 모든 블록을 담은 리스트를 담은 리스트 반환 
->>>>>>> 4c45677 (make Loop file)
+
 Block Game::GetRandomBlock()
 {
     if (blocks.empty())
@@ -87,10 +68,7 @@ void Game::Draw()
     }
 }
 
-<<<<<<< HEAD
-=======
-// 방향키로 블록 제어, 게임 오버에서 키 누르면 Reset()되어 다시 실행
->>>>>>> 4c45677 (make Loop file)
+
 void Game::HandleInput()
 {
     int keyPressed = GetKeyPressed();
@@ -101,11 +79,9 @@ void Game::HandleInput()
     }
     switch (keyPressed)
     {
-<<<<<<< HEAD
+
     case KEY_LEFT: // ���� �̵�(�Ʒ�, ����, ������)
-=======
-    case KEY_LEFT: // 블럭 이동(아래, 왼쪽, 오른쪽)
->>>>>>> 4c45677 (make Loop file)
+
         MoveBlockLeft();
         break;
     case KEY_RIGHT:
@@ -115,11 +91,9 @@ void Game::HandleInput()
         MoveBlockDown();
         UpdateScore(0, 1);
         break;
-<<<<<<< HEAD
+
     case KEY_UP: // ����ȸ�� 
-=======
-    case KEY_UP: // 블럭회전 
->>>>>>> 4c45677 (make Loop file)
+
         RotateBlock();
         break;
     }
@@ -191,11 +165,9 @@ void Game::RotateBlock()
     }
 }
 
-<<<<<<< HEAD
+
 void Game::LockBlock() // ������ â �Ʒ� ���� �����ϸ� ���ߵ��� Lock �ɾ��ֱ�
-=======
-void Game::LockBlock() // 블럭이 창 아래 끝에 도달하면 멈추도록 Lock 걸어주기
->>>>>>> 4c45677 (make Loop file)
+
 {
     vector<Position> tiles = currentBlock.GetCellPositions();
     for (Position item : tiles)
@@ -216,10 +188,7 @@ void Game::LockBlock() // 블럭이 창 아래 끝에 도달하면 멈추도록 
     }
 }
 
-<<<<<<< HEAD
-=======
-// 현재 블록이 격자를 벗어나는지 충돌하는지 검사
->>>>>>> 4c45677 (make Loop file)
+
 bool Game::BlockFits()
 {
     vector<Position> tiles = currentBlock.GetCellPositions();
@@ -260,8 +229,6 @@ void Game::UpdateScore(int linesCleared, int moveDownPoints)
     }
 
     score += moveDownPoints;
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> 4c45677 (make Loop file)
+

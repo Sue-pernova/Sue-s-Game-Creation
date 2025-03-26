@@ -12,7 +12,7 @@ public:
     // 持失切
     TetrisLoop();
 
-    // 社誤切
+    // 社瑚切
     ~TetrisLoop();
     void Run();
 
