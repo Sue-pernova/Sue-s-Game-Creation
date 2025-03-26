@@ -50,25 +50,25 @@ void TetrisLoop::Run()
         }
 
         BeginDrawing();
-        ClearBackground(darkBlue);
+        ClearBackground(lightPink);
 
-        DrawTextEx(font, "Score", { 360, 15 }, 30, 2, WHITE);
+        DrawTextEx(font, "Score", { 360, 15 }, 30, 2, BLACK);
 
-        DrawTextEx(font, "Next", { 370, 175 }, 30, 2, WHITE);
+        DrawTextEx(font, "Next", { 370, 175 }, 30, 2, BLACK);
 
         if (game.gameOver)
         {
-            DrawTextEx(font, "GAME OVER", { 320, 450 }, 30, 2, WHITE);
+            DrawTextEx(font, "GAME OVER", { 320, 450 }, 30, 2, BLACK);
         }
 
-        DrawRectangleRounded({ 320, 55, 170, 60 }, 0.3, 6, lightBlue);
+        DrawRectangleRounded({ 320, 55, 170, 60 }, 0.3, 6, WHITE);
 
         // 점수
         char scoreText[10];
         sprintf_s(scoreText, sizeof(scoreText), "%d", game.score);
         Vector2 textSize = MeasureTextEx(font, scoreText, 38, 2);
-        DrawTextEx(font, scoreText, { 310 + (170 - textSize.x) / 2, 65 }, 38, 2, WHITE);
-        DrawRectangleRounded({ 320, 215, 170, 180 }, 0.3, 6, lightBlue);
+        DrawTextEx(font, scoreText, { 310 + (170 - textSize.x) / 2, 65 }, 38, 2, BLACK);
+        DrawRectangleRounded({ 320, 215, 170, 180 }, 0.3, 6, WHITE);
 
         game.Draw();
 

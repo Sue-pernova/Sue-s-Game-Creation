@@ -2,16 +2,16 @@
 
 using namespace std;
 
-const Color darkGrey = { 26, 31, 40, 255 };
-const Color green = { 47, 230, 23, 255 };
-const Color red = { 232, 18, 18, 255 };
-const Color orange = { 226, 116, 17, 255 };
-const Color yellow = { 237, 234, 4, 255 };
-const Color purple = { 166, 0, 247, 255 };
-const Color cyan = { 21, 204, 209, 255 };
-const Color blue = { 13, 64, 216, 255 };
-const Color lightBlue = { 59, 85, 162, 255 };
-const Color darkBlue = { 44, 44, 127, 255 };
+const Color darkGrey = { 246, 245, 242, 255 };
+const Color green = { 172, 211, 168, 255 };
+const Color red = { 236, 82, 40, 255 };
+const Color orange = { 209, 187, 158, 255 };
+const Color yellow = { 243, 140, 121, 255 };
+const Color purple = { 198, 142, 253, 255 };
+const Color cyan = { 143, 135, 241, 255 };
+const Color blue = { 210, 224, 251, 255 };
+const Color lightPink = { 254, 210, 226, 255 };
+const Color darkPink = { 255, 164, 179, 255 };
 
 vector<Color> GetCellColors()
 {
