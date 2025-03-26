@@ -10,7 +10,7 @@ class TetrisLoop
 {
 public:
     // 持失切
-    TetrisLoop();
+    TetrisLoop(Music& bgm);
 
     // 社瑚切
     ~TetrisLoop();
@@ -26,6 +26,8 @@ private:
     Font font;
 
     double lastUpdateTime;
+
+    Music currentBgm;
 };
 
 #endif

@@ -1,16 +1,15 @@
 ﻿#include "TetrisLoop.h"
 #include "colors.h"
+#include "../Screen.h"
 #include <iostream>
 #include <cstdlib>   // rand, srand
 #include <ctime>     // time
 
 // 생성자
-TetrisLoop::TetrisLoop() : lastUpdateTime(0)
+TetrisLoop::TetrisLoop(Music& bgm) : lastUpdateTime(0)
 {
     srand(time(NULL));
-
-    InitWindow(500, 620, "SSUE's Tetris");
-    SetTargetFPS(60);
+    currentBgm = bgm;
 
     // 폰트 불러오기
     font = LoadFontEx("Font/monogram.ttf", 64, 0, 0);
@@ -20,7 +19,6 @@ TetrisLoop::~TetrisLoop()
 {
     // 불러온 폰트 메모리 해제
     UnloadFont(font);
-    CloseWindow();
 }
 
 bool TetrisLoop::EventTriggered(double interval)
@@ -39,7 +37,7 @@ void TetrisLoop::Run()
 {
     while (WindowShouldClose() == false)
     {
-        UpdateMusicStream(game.music);
+        UpdateMusicStream(currentBgm);
 
         game.HandleInput();
 
@@ -58,7 +56,8 @@ void TetrisLoop::Run()
 
         if (game.gameOver)
         {
-            DrawTextEx(font, "GAME OVER", { 320, 450 }, 30, 2, BLACK);
+            currentWindow = ENDING;
+            break;
         }
 
         DrawRectangleRounded({ 320, 55, 170, 60 }, 0.3, 6, WHITE);
