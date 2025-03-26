@@ -22,8 +22,8 @@ C++과 **Raylib**을 활용해 클래식 **Snake game**과 **Tetris game**을 �
 # 👨‍👩‍👧‍👦 팀 소개
 |직분|이름|업무|Git 주소|
 |--|--|--|--|
-|팀장|김희수|Snake Game구현, 파일 병합, Main화면 디자인|https://github.com/BunnyByee|
-|팀원|노수현|Tetris Game구현, README 작성|https://github.com/hhhhhhyun|
+|팀장|김희수|Snake Game구현, 파일 병합, Main화면 디자인|[![GitHub](https://img.shields.io/badge/GitHub-Profile-black?logo=github)](https://github.com/BunnyByee)|
+|팀원|노수현|Tetris Game구현, README 작성|[![GitHub](https://img.shields.io/badge/GitHub-Profile-black?logo=github)](https://github.com/hhhhhhyun)|
 
 ---------------------------------------
 # 📝프로젝트 기간 및 세부 일정
