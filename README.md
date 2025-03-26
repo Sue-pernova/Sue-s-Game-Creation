@@ -1,6 +1,17 @@
 ♥️SSue의 게임 만들기♥️
 --------------------------------------
-<img src="https://img.shields.io/badge/C++-A8B9CC?style=flat-square&logo=C++&logoColor="/>
+**Environment**
+
+<img src="https://img.shields.io/badge/c++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+  <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
+
+**Development**
+
+<img src="https://img.shields.io/badge/Raylib-000000?style=for-the-badge&logo=raylib&logoColor=white">
+
+**Communication**
+
+<img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"> <img src="https://img.shields.io/badge/Kakaotalk-FFCD00?style=for-the-badge&logo=kakaotalk&logoColor=white"> <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white"> <img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white">
 
 --------------------------------------
 # 🎮 프로젝트 소개
@@ -47,5 +58,10 @@ C++과 **Raylib**을 활용해 클래식 **Snake game**과 **Tetris game**을 �
 - 점수: 먹이를 먹을 시 랜덤한 위치에 생성
   
 -------
-# ✨기술 스택
+# ✨화면 구성
+|시작 화면|Game Over|
+|--|--|
+|--|--|
+|**Tetris**|**Snake**|
+|--|--|
 
