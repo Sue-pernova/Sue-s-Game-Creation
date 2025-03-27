@@ -1,3 +1,0 @@
-C:\Users\kimhi\source\ScreenManager\x64\Debug\raylib.dll
-C:\Users\kimhi\source\ScreenManager\x64\Debug\glfw3.dll
-C:\Users\kimhi\source\ScreenManager\ScreenManager\x64\Debug\ScreenMa.E6BA7445.Up2Date
